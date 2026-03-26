@@ -305,6 +305,21 @@ class Menu:
         """
         kw = keyword.lower()
         return [i for i in self.items if kw in i.name.lower()]
+    
+    def sort_by_price(self, descending: bool = False) -> List[FoodItem]:
+        """
+        Returns menu items sorted by price.
+        Default is ascending (cheapest first).
+        Pass descending=True for most expensive first.
+        """
+        return sorted(self.items, key=lambda i: i.price, reverse=descending)
 
+    def sort_by_popularity(self, descending: bool = True) -> List[FoodItem]:
+        """
+        Returns menu items sorted by popularity rating.
+        Default is descending (highest rated first).
+        """
+        return sorted(self.items, key=lambda i: i.popularity_rating, reverse=descending)
+    
     def __repr__(self) -> str:
         return f"Menu(items={len(self.items)} items)"
