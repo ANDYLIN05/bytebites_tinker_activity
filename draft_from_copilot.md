@@ -1,1 +1,1 @@
-![alt text](bytebites_spec.PNG)
+![alt text](draft_from_copilot.PNG)
