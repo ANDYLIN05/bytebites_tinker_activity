@@ -8,4 +8,4 @@ These customers need to browse specific food items (like a "Spicy Burger" or "La
 
 We also need a way to manage the full collection of items, a digital list that holds all items and lets us filter by category such as "Drinks" or "Desserts".
 
-Finally, when a user picks items, we need to group them into a single transaction. This transaction object should store the selected items and compute the total cost
+Finally, when a user picks items, we need to group them into a single transaction. This transaction object should store the selected items and compute the total cost.
